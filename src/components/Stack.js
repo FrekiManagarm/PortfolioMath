@@ -11,6 +11,7 @@ export default function Stack() {
       style={{
         background: '#eee',
       }}
+      id="mystack"
     >
       <h1 className="text-5xl font-dosis font-bold mb-10">Mon environnement</h1>
       <div>
