@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Navigation from './components/Navigation';
 import Stack from './components/Stack';
 import Work from './components/Work';
+import Costs from './components/Costs';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Header />
       <Work />
       <Stack />
+      <Costs />
       <Contact />
     </div>
   );

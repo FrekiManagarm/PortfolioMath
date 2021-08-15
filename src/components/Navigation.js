@@ -11,7 +11,7 @@ export default function Navigation() {
       }}
       className="font-dosis fixed top-0 w-screen z-40"
     >
-      <div className="flex items-center w-10/12  mx-auto py-3">
+      <div className="flex items-center w-10/12  mx-auto py-3" data-aos="fade-up" data-aos-delay="500">
         <ScrollLink
           to="header"
           smooth={true}
@@ -26,7 +26,7 @@ export default function Navigation() {
         <div className="text-white text-xl">
           {content.nav.links.map((link, index) => {
             return (
-              <ScrollLink to={link.to} smooth={true}>
+              <ScrollLink to={link.to} smooth={true} >
                 <span className="mr-4 cursor-pointer" key={index}>
                   {link.text}
                 </span>

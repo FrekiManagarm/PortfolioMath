@@ -21,13 +21,13 @@ export default function Header() {
       id="header"
     >
       <div className="flex flex-col items-center justify-center md:flex-row-reverse md:w-10/12 md:justify-between">
-        <div className="w-full md:w-2/5 ">
+        <div className="w-full md:w-2/5" data-aos="fade-left" data-aos-delay="1000">
             <Tilt>
-              <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500" src={content.header.img} alt="img" className="rounded-full" />
+              <img src={content.header.img} alt="img" className="rounded-full" />
             </Tilt>
         </div>
 
-        <div data-aos="fade-left" data-aos-delay="50" className="font-dosis w-full md:w-3/5 text-center md:text-left ">
+        <div data-aos="fade-left" data-aos-delay="500" className="font-dosis w-full md:w-3/5 text-center md:text-left ">
           <h2
                 
             className={`text-3xl md:text-4xl lg:text-6xl text-white font-bold transform ${
@@ -52,7 +52,7 @@ export default function Header() {
             />
           </h1>
 
-          <ScrollLink to="mywork" smooth={true}>
+          <ScrollLink data-aos="fade-right" data-aos-delay="1500" to="mywork" smooth={true}>
             <button
               className={` animate-bounce bg-indigo-500 px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-indigo-300 transform  ${
                 animated ? 'translate-y-0' : styleTranslate

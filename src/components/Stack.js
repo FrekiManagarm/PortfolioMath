@@ -13,11 +13,13 @@ export default function Stack() {
       }}
       id="mystack"
     >
-      <h1 className="text-5xl font-dosis font-bold mb-10">Mon environnement</h1>
+      <h1 data-aos="fade-down" data-aos-delay="500" className="text-5xl font-dosis font-bold mb-10">Mon environnement</h1>
       <div>
         <div className="flex flex-wrap justify-center">
           {content.stack.tech.map((tech, index) => (
             <span
+              data-aos="fade-up top-bottom"
+              data-aos-delay="1000"
               key={index}
               className={` h-40 w-40 bg-white shadow-xl  ml-2  rounded-full flex justify-center items-center p-5 m-2 ${
                 index % 2 !== 0 ? 'animate-bounce' : 'animate-bounceFirst'
@@ -28,7 +30,7 @@ export default function Stack() {
           ))}
         </div>
       </div>
-      <p className="mt-10 mb-10 w-11/12 md:max-w-xl text-center inline-block text-xl md:text-2xl font-dosis ">
+      <p data-aos="fade-up" data-aos-delay="1500" className="mt-10 mb-10 w-11/12 md:max-w-xl text-center inline-block text-xl md:text-2xl font-dosis ">
         {content.stack.desc}.
       </p>
     </div>
